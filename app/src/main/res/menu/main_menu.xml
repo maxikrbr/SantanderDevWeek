@@ -14,4 +14,16 @@
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/item_3"
+        android:title="Menu 3"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/item_4"
+        android:title="Menu 4"
+        android:icon="@drawable/abc_vector_test"
+        app:showAsAction="ifRoom"/>
+
 </menu>
