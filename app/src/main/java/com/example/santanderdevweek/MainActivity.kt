@@ -26,10 +26,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d("CLICK", "Item 1 active")
                 true
             }
-            R.id.item_2 -> {
-                Log.d("CLICK", "Item 2 active")
-                true
-            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

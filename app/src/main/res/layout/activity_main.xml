@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="409dp"
@@ -266,5 +257,51 @@
         app:layout_constraintBottom_toBottomOf="@id/card_right"
         app:layout_constraintEnd_toEndOf="@id/card_right"
         app:layout_constraintStart_toStartOf="@id/card_right" />
+
+    <ImageView
+        android:id="@+id/finalBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:background="@color/redprimary"
+        app:layout_constraintTop_toBottomOf="@id/card_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cardnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartão final "
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/finalBar"
+        app:layout_constraintStart_toStartOf="@id/finalBar"
+        app:layout_constraintBottom_toBottomOf="@id/finalBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/finalBar"
+        app:layout_constraintStart_toEndOf="@id/tv_cardnumber"
+        app:layout_constraintBottom_toBottomOf="@id/finalBar" />
+
+    <ImageView
+        android:id="@+id/show_more"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/showmore_foreground"
+        app:layout_constraintEnd_toEndOf="@id/finalBar"
+        app:layout_constraintBottom_toBottomOf="@id/finalBar"
+        app:layout_constraintTop_toTopOf="@id/finalBar" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
