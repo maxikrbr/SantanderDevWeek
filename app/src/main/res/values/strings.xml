@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SantanderDevWeek</string>
+    <string name="app_name">Santander</string>
+    <string name="inapp_name">Santander</string>
 </resources>
